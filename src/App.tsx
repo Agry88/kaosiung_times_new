@@ -5,6 +5,11 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import IndexPage from './Pages/IndexPage';
 import Sidebar from './Components/Sidebar';
 import  Box  from '@mui/material/Box';
+import News from './Pages/News';
+import About from './Pages/About';
+import Organize from './Pages/Organize';
+import Company from './Pages/Company';
+import Rewards from './Pages/Rewards';
 
 function App() {
   const [SidebarDisplay, setSidebarDisplay] = React.useState("none");
@@ -25,6 +30,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/IndexPage" replace />}></Route>
           <Route path="/IndexPage" element={<IndexPage />} />
+          <Route path="/News" element={<News />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Organize" element={<Organize />} />
+          <Route path="/Company" element={<Company />} />
+          <Route path="/Rewards" element={<Rewards />} />
         </Routes>
       </Box>
     </Router>
