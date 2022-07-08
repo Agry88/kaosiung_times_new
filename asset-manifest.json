@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/kaosiung_times_new/static/css/main.be98e414.css",
+    "main.js": "/kaosiung_times_new/static/js/main.dccddcfa.js",
+    "static/js/787.6695e83e.chunk.js": "/kaosiung_times_new/static/js/787.6695e83e.chunk.js",
+    "static/media/11.jpg": "/kaosiung_times_new/static/media/11.26bf094e278226253073.jpg",
+    "static/media/10.jpg": "/kaosiung_times_new/static/media/10.16f19c44c670292d68cd.jpg",
+    "static/media/9.jpg": "/kaosiung_times_new/static/media/9.002621bb111b91464ab1.jpg",
+    "static/media/map-image.png": "/kaosiung_times_new/static/media/map-image.3cd6dd9808474f6ed762.png",
+    "static/media/7.jpg": "/kaosiung_times_new/static/media/7.2aea9ef5e10ff630cd96.jpg",
+    "static/media/12.jpg": "/kaosiung_times_new/static/media/12.cd2a6453465eb1a5732b.jpg",
+    "static/media/6.jpg": "/kaosiung_times_new/static/media/6.fb948f777de900365550.jpg",
+    "static/media/3.jpg": "/kaosiung_times_new/static/media/3.4f23a340336f907fb577.jpg",
+    "static/media/13.jpg": "/kaosiung_times_new/static/media/13.b46ef09216764b19455d.jpg",
+    "static/media/4.jpg": "/kaosiung_times_new/static/media/4.31a59a747dae8dfc28eb.jpg",
+    "static/media/8.jpg": "/kaosiung_times_new/static/media/8.81e969da54015fc6c7a1.jpg",
+    "static/media/5.jpg": "/kaosiung_times_new/static/media/5.2c6b886e017856c208e6.jpg",
+    "static/media/1.jpg": "/kaosiung_times_new/static/media/1.e48d0bb72720fba29a5b.jpg",
+    "static/media/2.jpg": "/kaosiung_times_new/static/media/2.65678ddc5651b4934b89.jpg",
+    "static/media/header-bg2.jpg": "/kaosiung_times_new/static/media/header-bg2.18195d7e3835109f1ae5.jpg",
+    "static/media/organ.PNG": "/kaosiung_times_new/static/media/organ.727f71e2ede7a2718432.PNG",
+    "index.html": "/kaosiung_times_new/index.html",
+    "main.be98e414.css.map": "/kaosiung_times_new/static/css/main.be98e414.css.map",
+    "main.dccddcfa.js.map": "/kaosiung_times_new/static/js/main.dccddcfa.js.map",
+    "787.6695e83e.chunk.js.map": "/kaosiung_times_new/static/js/787.6695e83e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be98e414.css",
+    "static/js/main.dccddcfa.js"
+  ]
+}
