@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename='kaosiung_times_new'>
       <Box >
         <Navbar handleMenu={handleMenu} />
         <Sidebar display={SidebarDisplay} />
