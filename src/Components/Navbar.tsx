@@ -1,16 +1,13 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
+import home_img from "../assets/logo.png";
 import Stack from '@mui/material/Stack';
-import SearchPaper from './SearchPaper';
+import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
+import { Link } from 'react-router-dom'
 
 
 
@@ -49,89 +46,36 @@ const Navbar = (props: NavbarProps) => {
     return (
         <AppBar position="fixed" sx={{ backgroundColor: "#212529" }}>
             <Container maxWidth="xl">
-                <Toolbar disableGutters sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                    <Stack direction={"row"} sx={{ alignItems: "center" }}>
-                        <IconButton
-                            size="large"
-                            onClick={props.handleMenu}
-                            color="inherit"
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Button variant="text" onClick={Scrolltop}>
-                            <Typography variant="h6" sx={{ color: "#ffc800", fontWeight: 600 }}>社團法人高雄市時代科技學術研究協會</Typography>
-                        </Button>
-                    </Stack>
-
-                    <Box sx={{ display: { xs: 'flex', md: 'none' }, justifySelf: "flex-end" }}>
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleOpenNavMenu}
-                            color="inherit"
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: 'block', md: 'none' },
-                            }}
-                        >
-                            {pages.map((page, index) => (
-                                <MenuItem key={index} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
-                                </MenuItem>
-                            ))}
-                            <SearchPaper />
-                        </Menu>
-                    </Box>
-
-                    <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page, index) => (
-                            <Button
-                                key={index}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
+                <Toolbar disableGutters sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <IconButton onClick={Scrolltop}>
+                        <img src={home_img} style={{ width: 100, height: 100 }} />
+                    </IconButton>
+                    <Stack sx={{ gap: 2 }}>
+                        <Typography variant="h5" color="initial" sx={{ textAlign: "center" , color:"#fff" , fontWeight:700 , fontSize:35 }}>社團法人高雄市時代科技學術研究協會</Typography>
+                        <Stack sx={{ flexDirection: "row", gap: 2 }}>
+                            <Button component={Link} to="/IndexPage" variant="contained" color="primary">
+                                首頁
                             </Button>
-                        ))}
-                        <Box sx={{ flexGrow: 0, alignSelf: "center" }}>
-                            <Menu
-                                sx={{ mt: '45px' }}
-                                id="menu-appbar"
-                                anchorEl={anchorElUser}
-                                anchorOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                open={Boolean(anchorElUser)}
-                                onClose={handleCloseUserMenu}
-                            >
-                            </Menu>
-                            <SearchPaper />
-                        </Box>
-                    </Box>
+                            <Button component={Link} to="/News" variant="contained" color="primary">
+                                最新消息
+                            </Button>
+                            <Button component={Link} to="/Rewards" variant="contained" color="primary">
+                                得獎紀錄
+                            </Button>
+                            <Button component={Link} to="/Organize" variant="contained" color="primary">
+                                組織架構
+                            </Button>
+                            <Button variant="contained" color="primary">
+                                活動花絮
+                            </Button>
+                            <Button component={Link} to="/About" variant="contained" color="primary">
+                                聯絡方式
+                            </Button>
+                            <Button component={Link} to="/Certificate"  variant="contained" color="primary">
+                                專利證書
+                            </Button>
+                        </Stack>
+                    </Stack>
                 </Toolbar>
             </Container>
         </AppBar>

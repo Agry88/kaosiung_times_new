@@ -8,10 +8,12 @@ import Typography from '@mui/material/Typography';
 
 interface ActivityProps {
     Img:any;
+    Title:String;
 }
 
 function ActivityCard(props:ActivityProps) {
     const {Img} = props;
+    const {Title} = props;
     return (
         <Card sx={{ minWidth:360 , maxHeight:450 , m:3}}>
             <CardMedia
@@ -27,7 +29,7 @@ function ActivityCard(props:ActivityProps) {
             />
             <CardContent>
                 <Typography variant="h5" component="div">
-                    活動照片標題
+                    {Title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                     活動照片介紹

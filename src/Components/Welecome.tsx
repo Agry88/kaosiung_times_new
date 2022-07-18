@@ -1,6 +1,6 @@
 
 import Box from '@mui/material/Box';
-import Img from "../assets/img/header-bg2.jpg";
+import Img from "../assets/img/header-bg3.jpeg";
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import  Stack  from '@mui/material/Stack';

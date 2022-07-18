@@ -3,11 +3,12 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
+import Contact from './../Components/Contact';
 
 function About() {
     return (
-        <Box sx={{ backgroundColor: "grey.100", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <Paper sx={{ minHeight: "600px", width: "800px" }}>
+        <Box sx={{ backgroundColor: "grey.100", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center"  , flexDirection:"column" , gap:"50px"}}>
+            <Paper sx={{ minHeight: "600px", width: "800px" , mt:"150px" }}>
                 <Stack sx={{gap:2, p:3}}>
                     <Typography variant="h6" color="initial">本會以提供學術研究、合作交流平台以促進跨領域學術交流，增進產學合作為宗旨。</Typography>
                     <Typography variant="body1" color="initial">本會之任務如下：</Typography>
@@ -19,6 +20,7 @@ function About() {
                     <Typography variant="body1" color="initial">閱讀更多： https://time-technology-association.webnode.tw/%e9%97%9c%e6%96%bc%e6%88%91%e5%80%91/</Typography>
                 </Stack>
             </Paper>
+            <Contact />
         </Box>
     );
 }

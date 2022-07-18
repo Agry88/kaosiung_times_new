@@ -4,9 +4,9 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack';
 import ActivityCard from './ActivityCard';
-import FirstImg from "../assets/img/activity/1.jpg";
-import SecondImg from "../assets/img/activity/2.jpg";
-import ThirdImg from "../assets/img/activity/3.jpg";
+import FirstImg from "../assets/img/activity/new1.jpeg";
+import SecondImg from "../assets/img/activity/new2.jpeg";
+import ThirdImg from "../assets/img/activity/new3.png";
 
 
 function Activity() {
@@ -18,9 +18,9 @@ function Activity() {
                 <Stack sx={{ display: "flex" }}>
                     <Typography variant="h4" sx={{ color: "#212529", fontSize: 40, fontStyle: "italic", fontWeight: 700, mb: 15 , alignSelf:"center" }}>活動照片</Typography>
                     <Stack sx={{flexDirection: { xs: "column", lg: "row" }}}>
-                        <ActivityCard Img={FirstImg}/>
-                        <ActivityCard Img={SecondImg}/>
-                        <ActivityCard Img={ThirdImg}/>
+                        <ActivityCard Img={FirstImg} Title={"第22屆俄羅斯阿基米德國際發明競賽02"}/>
+                        <ActivityCard Img={SecondImg} Title={"第22屆俄羅斯阿基米德國際發明競賽03"}/>
+                        <ActivityCard Img={ThirdImg} Title={"第22屆俄羅斯阿基米德國際發明競賽04"}/>
                     </Stack>
                 </Stack>
             </Box>

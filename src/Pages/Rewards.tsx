@@ -7,27 +7,6 @@ import Reward from './../Components/Reward';
 
 const datas = [
     {
-        id: "1",
-        Reward_name: "機械裝置的平衡校正系統及其校正方法",
-        Reward_small_explain: "活動照片小標",
-        img_src: require("../assets/img/page_about/1.jpg"),
-        Reward_explain: "機械裝置的平衡校正系統及其校正方法",
-    },
-    {
-        id: "2",
-        Reward_name: "機械裝置的平衡校正系統及其校正方法",
-        Reward_small_explain: "活動照片小標",
-        img_src: require("../assets/img/page_about/2.jpg"),
-        Reward_explain: "機械裝置的平衡校正系統及其校正方法",
-    },
-    {
-        id: "3",
-        Reward_name: "鐵捲門之防壓檢測裝置",
-        Reward_small_explain: "活動照片小標",
-        img_src: require("../assets/img/page_about/3.jpg"),
-        Reward_explain: "鐵捲門之防壓檢測裝置",
-    },
-    {
         id: "4",
         Reward_name: "賽普勒斯國際創新發明獎",
         Reward_small_explain: "活動照片小標",
@@ -95,6 +74,20 @@ const datas = [
         Reward_name: "烏克蘭榮譽院士_歐招輝",
         Reward_small_explain: "活動照片小標",
         img_src: require("../assets/img/page_about/13.jpg"),
+        Reward_explain: "烏克蘭榮譽院士_歐招輝",
+    },
+    {
+        id: "14",
+        Reward_name: "俄羅斯阿基米德國際發明競賽",
+        Reward_small_explain: "活動照片小標",
+        img_src: require("../assets/img/page_about/14.jpg"),
+        Reward_explain: "烏克蘭榮譽院士_歐招輝",
+    },
+    {
+        id: "15",
+        Reward_name: "IMETI 2021 國際研討會 最佳論文獎",
+        Reward_small_explain: "活動照片小標",
+        img_src: require("../assets/img/page_about/15.JPG"),
         Reward_explain: "烏克蘭榮譽院士_歐招輝",
     },
 ]

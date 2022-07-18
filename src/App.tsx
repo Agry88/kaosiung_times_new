@@ -10,6 +10,7 @@ import About from './Pages/About';
 import Organize from './Pages/Organize';
 import Company from './Pages/Company';
 import Rewards from './Pages/Rewards';
+import Certificate from './Pages/Certificate';
 
 function App() {
   const [SidebarDisplay, setSidebarDisplay] = React.useState("none");
@@ -35,6 +36,7 @@ function App() {
           <Route path="/Organize" element={<Organize />} />
           <Route path="/Company" element={<Company />} />
           <Route path="/Rewards" element={<Rewards />} />
+          <Route path="/Certificate" element={<Certificate />} />
         </Routes>
       </Box>
     </Router>
