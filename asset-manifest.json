@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/kaosiung_times_new/static/css/main.23f6002f.css",
-    "main.js": "/kaosiung_times_new/static/js/main.64b9c35b.js",
+    "main.js": "/kaosiung_times_new/static/js/main.1e3ab88a.js",
     "static/js/787.6695e83e.chunk.js": "/kaosiung_times_new/static/js/787.6695e83e.chunk.js",
     "static/media/14.jpg": "/kaosiung_times_new/static/media/14.93e3298e6a608a59b7d4.jpg",
     "static/media/new3.png": "/kaosiung_times_new/static/media/new3.abcfa5308dd81c820b42.png",
+    "static/media/logo_nobackground.png": "/kaosiung_times_new/static/media/logo_nobackground.6538f642e13d14d5294d.png",
     "static/media/11.jpg": "/kaosiung_times_new/static/media/11.26bf094e278226253073.jpg",
     "static/media/10.jpg": "/kaosiung_times_new/static/media/10.16f19c44c670292d68cd.jpg",
     "static/media/9.jpg": "/kaosiung_times_new/static/media/9.002621bb111b91464ab1.jpg",
@@ -23,18 +24,17 @@
     "static/media/8.jpg": "/kaosiung_times_new/static/media/8.81e969da54015fc6c7a1.jpg",
     "static/media/5.jpg": "/kaosiung_times_new/static/media/5.2c6b886e017856c208e6.jpg",
     "static/media/2.jpg": "/kaosiung_times_new/static/media/2.03c3a5c209c4c3d4c3c3.jpg",
-    "static/media/logo.png": "/kaosiung_times_new/static/media/logo.c94653ef21f7202e737a.png",
     "static/media/1.jpg": "/kaosiung_times_new/static/media/1.e48d0bb72720fba29a5b.jpg",
     "static/media/15.JPG": "/kaosiung_times_new/static/media/15.01d38c6b96c36a1d9a2f.JPG",
     "static/media/new1.jpeg": "/kaosiung_times_new/static/media/new1.27e2313eb116f9be2549.jpeg",
     "static/media/organ.PNG": "/kaosiung_times_new/static/media/organ.727f71e2ede7a2718432.PNG",
     "index.html": "/kaosiung_times_new/index.html",
     "main.23f6002f.css.map": "/kaosiung_times_new/static/css/main.23f6002f.css.map",
-    "main.64b9c35b.js.map": "/kaosiung_times_new/static/js/main.64b9c35b.js.map",
+    "main.1e3ab88a.js.map": "/kaosiung_times_new/static/js/main.1e3ab88a.js.map",
     "787.6695e83e.chunk.js.map": "/kaosiung_times_new/static/js/787.6695e83e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23f6002f.css",
-    "static/js/main.64b9c35b.js"
+    "static/js/main.1e3ab88a.js"
   ]
 }
