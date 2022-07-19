@@ -1,13 +1,13 @@
-import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
-import home_img from "../assets/logo.png";
+import home_img from "../assets/logo_nobackground.png";
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
 
 
 
@@ -20,6 +20,7 @@ interface NavbarProps {
 const Navbar = (props: NavbarProps) => {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+    const [isTop, setisTop] = useState(false);
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
@@ -43,15 +44,24 @@ const Navbar = (props: NavbarProps) => {
         });
     }
 
+    document.addEventListener("scroll", () => isUserTop());
+    const isUserTop = () => {
+        const element = document.getElementsByTagName("html")[0];
+        if (element.scrollTop !== 0) {
+            // setisTop(false);
+        }
+        // setisTop(true);
+    }
+
     return (
         <AppBar position="fixed" sx={{ backgroundColor: "#212529" }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <IconButton onClick={Scrolltop}>
-                        <img src={home_img} style={{ width: 100, height: 100 }} />
+                        <img src={home_img} style={{ width: isTop ? 200 : 100, height: isTop ? 200 : 100, transition: "height 2s linear" }} />
                     </IconButton>
                     <Stack sx={{ gap: 2 }}>
-                        <Typography variant="h5" color="initial" sx={{ textAlign: "center" , color:"#fff" , fontWeight:700 , fontSize:35 }}>社團法人高雄市時代科技學術研究協會</Typography>
+                        <Typography variant="h5" color="initial" sx={{ textAlign: "center", color: "#fff", fontWeight: 700, fontSize: 35 }}>社團法人高雄市時代科技學術研究協會</Typography>
                         <Stack sx={{ flexDirection: "row", gap: 2 }}>
                             <Button component={Link} to="/IndexPage" variant="contained" color="primary">
                                 首頁
@@ -71,7 +81,7 @@ const Navbar = (props: NavbarProps) => {
                             <Button component={Link} to="/About" variant="contained" color="primary">
                                 聯絡方式
                             </Button>
-                            <Button component={Link} to="/Certificate"  variant="contained" color="primary">
+                            <Button component={Link} to="/Certificate" variant="contained" color="primary">
                                 專利證書
                             </Button>
                         </Stack>
