@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <Router basename='kaosiung_times_new'>
+    <Router basename='/time-technology-association.com'>
       <Box >
         <Navbar handleMenu={handleMenu} />
         <Sidebar display={SidebarDisplay} />
