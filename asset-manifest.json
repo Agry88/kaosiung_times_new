@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kaosiung_times_new/static/css/main.23f6002f.css",
-    "main.js": "/kaosiung_times_new/static/js/main.1e3ab88a.js",
+    "main.js": "/kaosiung_times_new/static/js/main.9c98cd2d.js",
     "static/js/787.6695e83e.chunk.js": "/kaosiung_times_new/static/js/787.6695e83e.chunk.js",
     "static/media/14.jpg": "/kaosiung_times_new/static/media/14.93e3298e6a608a59b7d4.jpg",
     "static/media/new3.png": "/kaosiung_times_new/static/media/new3.abcfa5308dd81c820b42.png",
@@ -30,11 +30,11 @@
     "static/media/organ.PNG": "/kaosiung_times_new/static/media/organ.727f71e2ede7a2718432.PNG",
     "index.html": "/kaosiung_times_new/index.html",
     "main.23f6002f.css.map": "/kaosiung_times_new/static/css/main.23f6002f.css.map",
-    "main.1e3ab88a.js.map": "/kaosiung_times_new/static/js/main.1e3ab88a.js.map",
+    "main.9c98cd2d.js.map": "/kaosiung_times_new/static/js/main.9c98cd2d.js.map",
     "787.6695e83e.chunk.js.map": "/kaosiung_times_new/static/js/787.6695e83e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23f6002f.css",
-    "static/js/main.1e3ab88a.js"
+    "static/js/main.9c98cd2d.js"
   ]
 }
