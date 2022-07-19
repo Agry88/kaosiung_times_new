@@ -7,7 +7,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
+import React, { useState , useEffect } from 'react'
 
 
 
@@ -20,7 +20,8 @@ interface NavbarProps {
 const Navbar = (props: NavbarProps) => {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-    const [isTop, setisTop] = useState(false);
+    const [isTop, setisTop] = useState(true);
+    const [ScrollTop, setScrollTop] = useState(0);
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
@@ -44,21 +45,32 @@ const Navbar = (props: NavbarProps) => {
         });
     }
 
-    document.addEventListener("scroll", () => isUserTop());
-    const isUserTop = () => {
+    const onScroll = () => {
         const element = document.getElementsByTagName("html")[0];
-        if (element.scrollTop !== 0) {
-            // setisTop(false);
-        }
-        // setisTop(true);
-    }
+        const userScrollTop = element.scrollTop;
+        setisTop(element.scrollTop === 0);
+        setScrollTop(userScrollTop);
+    };
+
+    useEffect(() => {
+        onScroll();
+    }, [])
+    
+
+    useEffect(() => {
+
+        window.addEventListener("scroll", onScroll);
+
+        return () => window.removeEventListener("scroll", onScroll);
+    }, [ScrollTop]);
+
 
     return (
         <AppBar position="fixed" sx={{ backgroundColor: "#212529" }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <IconButton onClick={Scrolltop}>
-                        <img src={home_img} style={{ width: isTop ? 200 : 100, height: isTop ? 200 : 100, transition: "height 2s linear" }} />
+                        <img src={home_img} style={{ width: isTop ? 150 : 100, height: isTop ? 150 : 100,transition: "height 0.5s ease , width 0.5s ease" }} />
                     </IconButton>
                     <Stack sx={{ gap: 2 }}>
                         <Typography variant="h5" color="initial" sx={{ textAlign: "center", color: "#fff", fontWeight: 700, fontSize: 35 }}>社團法人高雄市時代科技學術研究協會</Typography>

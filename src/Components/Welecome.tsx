@@ -9,7 +9,7 @@ function Welcome() {
     return (
         <Box sx={{
             width: "100%", height: "80%", backgroundImage: `url(${Img})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center center",
-            display: "flex", alignItems: "center", justifyContent: "center"
+            display: "flex", alignItems: "center", justifyContent: "center" , mt:15
         }}>
             <Box>
                 <Stack sx={{display:"flex"}}>
